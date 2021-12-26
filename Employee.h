@@ -12,12 +12,12 @@ class Employee{
     private:
         std::string m_name;
         Date m_date;
-        uint m_loggedHours;
-        std::map<Date, uint> m_logs;
+        uint16_t m_loggedHours;
+        std::map<Date, uint16_t> m_logs;
     public:
-        Employee(const std::string& name, const Date date, const uint& loggedHours);
+        Employee(const std::string& name, const Date date, const uint16_t& loggedHours);
 
-        void add_log(const Date date, const uint hours);
+        void add_log(const Date date, const uint16_t hours);
         friend std::ostream& operator<<(std::ostream& os, const Employee& c);
         std::string to_str(std::string delimiter)const;
 };

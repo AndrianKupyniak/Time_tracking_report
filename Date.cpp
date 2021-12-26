@@ -6,7 +6,7 @@ void Date::validate_date(){
         m_month = 1;
         LOG_ERROR("invalid month changed");
     }
-    if(m_year > 2022 || m_year <= 1900){
+    if(m_year > 2022 || m_year < 1900){
         m_year = 1900;
         LOG_ERROR("invalid year changed");
     }
