@@ -10,6 +10,9 @@
 # Ignore vscode dirs
 /.vscode
 
+# Ignore build dir
+/build
+
 # Default ignored files
 /shelf/
 /workspace.xml
